@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
+// import { Link } from 'dva/router';
 import style from './Basiclayout.less';
 
 const { Header, Content, Footer } = Layout;
@@ -41,7 +42,9 @@ class Basiclayout extends React.PureComponent {
           className={style.content}
           style={{ minHeight: 'calc( 100vh - 140px )' }}
         >content</Content>
-        <Footer className={style.footer}>Footer</Footer>
+        <Footer>
+          <a href="https://github.com/zhengkun1">我的GitHub</a>
+        </Footer>
       </Layout>
     );
     return (
