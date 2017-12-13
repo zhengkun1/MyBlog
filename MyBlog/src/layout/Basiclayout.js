@@ -42,7 +42,8 @@ class Basiclayout extends React.PureComponent {
           className={style.content}
           style={{ minHeight: 'calc( 100vh - 140px )' }}
         >content</Content>
-        <Footer>
+        <Footer className={style.footer}>
+          <icon type="github" />
           <a href="https://github.com/zhengkun1">我的GitHub</a>
         </Footer>
       </Layout>
