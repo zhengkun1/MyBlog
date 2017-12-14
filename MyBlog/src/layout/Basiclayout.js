@@ -58,8 +58,8 @@ class Basiclayout extends React.PureComponent {
               onClick={this.toggle}
             />
             <Switch>
-              <Route path="/a" component={A} />
               <Route path="/b" component={B} />
+              <Route path="/" component={A} />
             </Switch>
           </Content>
           <Footer className={styles.footer}>
