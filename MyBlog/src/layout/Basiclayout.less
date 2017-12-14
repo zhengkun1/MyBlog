@@ -1,33 +1,29 @@
 @import "~antd/lib/style/themes/default.less";
-.layout {
-  height: 100%;
-}
-.header {
-  height: 60px;
+.herder {
+  background: #ffffff;
+  min-width: 100vh;
+  // box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
   position: relative;
-  padding: 10px 300px;
-  // -webkit-box-sizing: border-box;
-  // border-bottom: 1px solid #ffffff;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content:center; 
+  z-index: 10;
   .menu {
-    color: #fff;
-    border-bottom: 0px solid #ffffff;
-    background: transparent;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
   }
 }
-.content {
-  background: #ffffff;
-}
-.footer {
-  background: #ffffff;
+.trigger {
   display: flex;
+  // position: absolute;
   justify-content: center;
-}
-.icon {
-  height: 10px;
-  width: 10px;
+  float: top;
+  // left: 46%;
+  font-size: 20px;
+  line-height: 64px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 0 24px;
+  &:hover {
+    background: @primary-1;
+  }
 }
