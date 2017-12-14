@@ -2,7 +2,6 @@
 .herder {
   background: #ffffff;
   min-width: 100vh;
-  // box-shadow: 2px 0 6px rgba(0, 21, 41, .35);
   position: relative;
   z-index: 10;
   .menu {
@@ -12,18 +11,24 @@
   }
 }
 .trigger {
-  display: flex;
-  // position: absolute;
-  justify-content: center;
-  float: top;
-  // left: 46%;
+  position: absolute;
+  top: 80px;
   font-size: 20px;
   line-height: 64px;
-  background-color: #ffffff;
-  cursor: pointer;
+  background-color: transparent;
+  // cursor: pointer;
   transition: all .3s;
   padding: 0 24px;
   &:hover {
     background: @primary-1;
   }
+}
+.content {
+  background: rgba(255, 255, 255, 0); 
+}
+.div {
+  background-image: url('') no-repeat;
+}
+.footer {
+  text-align: center;
 }

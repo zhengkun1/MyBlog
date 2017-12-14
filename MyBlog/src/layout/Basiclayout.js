@@ -1,10 +1,11 @@
 import React from 'react';
 import { Layout, Menu, Icon } from 'antd';
 // import default from 'antd/lib/card/Grid';
-import { Link, Route } from 'dva/router';
+import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
-import A from '../components/a';
+import A from '../components/a/a';
 import B from '../components/b';
+
 
 const { Header, Footer, Content } = Layout;
 class Basiclayout extends React.PureComponent {
@@ -24,7 +25,7 @@ class Basiclayout extends React.PureComponent {
   }
   render() {
     const layout = (
-      <div>
+      <div className={styles.div}>
         <Layout>
           <Header
             trigger={null}
@@ -39,28 +40,32 @@ class Basiclayout extends React.PureComponent {
               className={styles.menu}
             >
               <Menu.Item key="1">
-                <Link to="a">
-                  <span>主页</span>
+                <Link to="/a">
+                  <span>Home</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="b">
-                  <span>各地风景</span>
+                  <span>Self</span>
                 </Link>
               </Menu.Item>
             </Menu>
           </Header>
-          <Content style={{ minHeight: 'calc(100vh - 100px)' }}>
+          <Content style={{ minHeight: 'calc(100vh - 100px)' }} className={styles.global}>
             <Icon
               className={styles.trigger}
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
-            <Route path="/a" component={A} />
-            <Route path="/b" component={B} />
+            <Switch>
+              <Route path="/a" component={A} />
+              <Route path="/b" component={B} />
+            </Switch>
           </Content>
-          <Footer>
-1
+          <Footer className={styles.footer}>
+            <div>
+              @2017-12-14
+            </div>
           </Footer>
         </Layout>
       </div>
