@@ -40,7 +40,7 @@ class Basiclayout extends React.PureComponent {
               className={styles.menu}
             >
               <Menu.Item key="1">
-                <Link to="/a">
+                <Link to="/">
                   <span>Home</span>
                 </Link>
               </Menu.Item>
@@ -64,7 +64,7 @@ class Basiclayout extends React.PureComponent {
           </Content>
           <Footer className={styles.footer}>
             <div>
-              @2017-12-14
+              @2017-12-14 Made By 10K
             </div>
           </Footer>
         </Layout>
