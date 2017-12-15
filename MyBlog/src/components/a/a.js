@@ -5,7 +5,8 @@ export default class A extends PureComponent {
   render() {
     const layout = (
       <div>
-        <img className={styles.img} src="http://isujin.com/wp-content/themes/Diaspora/timthumb/timthumb.php?src=http://isujin.com/wp-content/uploads/2017/09/wallhaven-558971.jpg" alt="" />
+        <img className={styles.img} src="http://isujin.com/wp-content/uploads/2017/09/wallhaven-443177-1.jpg" alt="" />
+        <p className={styles.p}>爱生活,爱旅行</p>
       </div>
     );
     return (

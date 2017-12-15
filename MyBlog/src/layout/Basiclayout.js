@@ -4,7 +4,7 @@ import { Layout, Menu, Icon } from 'antd';
 import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
 import A from '../components/a/a';
-import B from '../components/b';
+import B from '../components/b/b';
 
 
 const { Header, Footer, Content } = Layout;
