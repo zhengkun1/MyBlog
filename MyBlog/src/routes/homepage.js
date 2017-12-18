@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import styles from './a.less';
+import styles from './homepage.less';
 
 export default class A extends PureComponent {
   render() {
