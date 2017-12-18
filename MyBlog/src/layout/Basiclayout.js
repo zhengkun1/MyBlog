@@ -3,8 +3,8 @@ import { Layout, Menu, Icon } from 'antd';
 // import default from 'antd/lib/card/Grid';
 import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
-import A from '../components/a/a';
-import B from '../components/b/b';
+import A from '../components/a/homepage';
+import B from '../components/b/self';
 
 
 const { Header, Footer, Content } = Layout;
@@ -41,17 +41,17 @@ class Basiclayout extends React.PureComponent {
             >
               <Menu.Item key="1">
                 <Link to="/">
-                  <span>Home</span>
+                  <span>HOME</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="b">
-                  <span>Self</span>
+                  <span>SELF</span>
                 </Link>
               </Menu.Item>
             </Menu>
           </Header>
-          <Content style={{ minHeight: 'calc(100vh - 100px)' }} className={styles.global}>
+          <Content style={{ minHeight: 'calc(100vh - 100px)' }} className={styles.content}>
             <Icon
               className={styles.trigger}
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
