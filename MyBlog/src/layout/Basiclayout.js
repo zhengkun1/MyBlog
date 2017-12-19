@@ -65,17 +65,10 @@ class Basiclayout extends React.PureComponent {
             </Menu>
           </Header>
           <Content style={{ minHeight: 'calc(100vh - 100px)' }} className={styles.content}>
-            {/* <Icon
-              className={styles.trigger}
-              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-              onClick={this.toggle}
-            /> */}
             <Switch>
               <Route path="/about" component={about} />
               <Route path="/write" component={Write} />
               <Route path="/" component={B} />
-              {/* <Route path="/" component={A} /> */}
-              {/* <Route path="" component={NotFound} /> */}
             </Switch>
           </Content>
           <Footer className={styles.footer}>
