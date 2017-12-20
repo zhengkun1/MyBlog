@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Row, Col } from 'antd';
 // import default from 'antd/lib/card/Grid';
 import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
@@ -36,33 +36,20 @@ class Basiclayout extends React.PureComponent {
             collapsed={this.state.collapsed}
             className={styles.header}
           >
-            <Menu
-              onClick={this.handleClick}
-              selectedKeys={[this.state.current]}
-              mode="horizontal"
-              className={styles.menu}
-            >
-              {/* <Menu.Item key="1">
-                <Link to="/">
-                  <span>HOME</span>
-                </Link>
-              </Menu.Item> */}
-              <Menu.Item key="2" className={styles.menuitem}>
-                <Link to="self">
-                  <span className={styles.span}>SELF</span>
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="3" className={styles.menuitem}>
-                <Link to="write">
-                  <span className={styles.span}>ESSAY</span>
-                </Link>
-              </Menu.Item>
-              <Menu.Item key="4" className={styles.menuitem}>
-                <Link to="about">
-                  <span className={styles.span}>ABOUT</span>
-                </Link>
-              </Menu.Item>
-            </Menu>
+            <Row>
+              <Col span={12} offset={12}>
+                <Menu
+                  onClick={this.handleClick}
+                  selectedKeys={[this.state.current]}
+                  mode="horizontal"
+                  className={styles.menu}
+                >
+                  <Menu.Item key="1"><Link to="/" style={{ fontSize: '30px' }}>SELF</Link></Menu.Item>
+                  <Menu.Item key="2"><Link to="/write" style={{ fontSize: '30px' }}>ESSAY</Link></Menu.Item>
+                  <Menu.Item key="3"><Link to="about" style={{ fontSize: '30px' }}>ABOUT</Link></Menu.Item>
+                </Menu>
+              </Col>
+            </Row>
           </Header>
           <Content style={{ minHeight: 'calc(100vh - 100px)' }} className={styles.content}>
             <Switch>
@@ -73,7 +60,10 @@ class Basiclayout extends React.PureComponent {
           </Content>
           <Footer className={styles.footer}>
             <div>
-              @2017-12-14 Made By 10K
+              <p>@2017-12-14 Made By 10K</p>
+              <Link to="/self" style={{ marginRight: '10px' }}>SELF</Link>
+              <Link to="/write" style={{ marginRight: '10px' }}>ESSAY</Link>
+              <Link to="/about">ABOUT</Link>
             </div>
           </Footer>
         </Layout>
