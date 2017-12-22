@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Pagination } from 'antd';
 import styles from '../routes/write.less';
 // import default from 'antd/lib/input';
 
@@ -34,6 +34,7 @@ export default class Write extends PureComponent {
           </div>
           <img className={styles.avatarurl} alt="图片无法加载" src="http://isujin.com/wp-content/uploads/2014/10/wallhaven-40800.jpg" />
         </div>
+        <Pagination defaultCurrent={1} total={50} className={styles.page} />
       </div>
     );
     return (
