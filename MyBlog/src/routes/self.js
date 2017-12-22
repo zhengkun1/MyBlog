@@ -17,8 +17,8 @@ export default class B extends PureComponent {
           <Col span={8}>
             <Card
               className={styles.card}
-              style={{ width: 240 }}
-              cover={<img alt="图片无法加载" src="http://img5.duitang.com/uploads/item/201411/02/20141102090411_kVLR3.jpeg" style={{ height: 260 }} />}
+              style={{ maxWidth: 240 }}
+              cover={<img alt="图片无法加载" src="http://img5.duitang.com/uploads/item/201411/02/20141102090411_kVLR3.jpeg" style={{ height: 260, width: 240 }} />}
             >
               <Meta
                 className={styles.meta}

@@ -31,17 +31,14 @@ class Basiclayout extends React.PureComponent {
       <div className={styles.div}>
         <Layout>
           <Header
-            trigger={null}
-            collapsible
-            collapsed={this.state.collapsed}
             className={styles.header}
           >
             <Row>
-              <Col span={12} offset={12}>
+              <Col span={4} className={styles.K}>10K</Col>
+              <Col span={8} offset={12}>
                 <Menu
                   onClick={this.handleClick}
                   selectedKeys={[this.state.current]}
-                  mode="horizontal"
                   className={styles.menu}
                 >
                   <Menu.Item key="1"><Link to="/" style={{ fontSize: '30px' }}>SELF</Link></Menu.Item>
