@@ -1,9 +1,12 @@
 @import "~antd/lib/style/themes/default.less";
 .header {
+  position: absolute;
+  top: 0;
   display: inline-block;
-  background: white;
+  background: transparent;
+  width: 100%;
   height: 64px;
-  border: 1px solid white;
+  border: 1px solid transparent;
 }
 .menu {
   display: flex;
@@ -12,9 +15,15 @@
   justify-content: center;
   align-items: center;
   height: 63px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  background-color: white;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  background-color: transparent;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent !important;
+}
+.ant-menu-item-selected {
+  background-color: transparent !important;
 }
 .content {
   background: white;
@@ -24,7 +33,13 @@
   background: white;
 }
 .K {
+  position: fixed;
+  left: 5;
   font-size: 60px;
   font-family: Xingkai SC;
   font-weight: 800;
+}
+.aaa {
+  position: fixed;
+  top: 0;
 }
