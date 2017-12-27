@@ -43,7 +43,11 @@ export default class Write extends PureComponent {
           </div>
           <img className={styles.avatarurl} alt="图片无法加载" src="http://isujin.com/wp-content/uploads/2014/10/wallhaven-40800.jpg" />
         </div>
-        <Pagination current={this.state.current} onChange={this.onChange} total={5} />
+        <Pagination
+          className={styles.page}
+          current={this.state.current}
+          onChange={this.onChange} total={5}
+        />
       </div>
     );
     return (
