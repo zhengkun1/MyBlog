@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
+import { ContainerQuery } from 'react-container-query';
 // import default from 'antd/lib/card/Grid';
 import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
@@ -26,6 +27,26 @@ class Basiclayout extends React.PureComponent {
     });
   }
   render() {
+    const query = {
+      'screen-xs': {
+        maxWidth: 575,
+      },
+      'screen-sm': {
+        minWidth: 576,
+        maxWidth: 767,
+      },
+      'screen-md': {
+        minWidth: 768,
+        maxWidth: 991,
+      },
+      'screen-lg': {
+        minWidth: 992,
+        maxWidth: 1199,
+      },
+      'screen-xl': {
+        minWidth: '100%',
+      },
+    };
     const layout = (
       <div className={styles.div}>
         <Layout>
@@ -65,7 +86,9 @@ class Basiclayout extends React.PureComponent {
       </div>
     );
     return (
-      <div>{layout}</div>
+      <ContainerQuery query={query}>
+        <div>{layout}</div>
+      </ContainerQuery>
     );
   }
 }
