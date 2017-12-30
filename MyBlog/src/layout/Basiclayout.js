@@ -87,7 +87,9 @@ class Basiclayout extends React.PureComponent {
     );
     return (
       <ContainerQuery query={query}>
-        <div>{layout}</div>
+        {
+          () => <div>{layout}</div>
+        }
       </ContainerQuery>
     );
   }

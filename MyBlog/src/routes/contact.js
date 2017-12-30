@@ -6,19 +6,19 @@ import styles from './contact.less';
 
 class Contact extends PureComponent {
   componentDidMount() {
-    this.props.dispatch({
-      type: 'global/self',
-    });
+    // this.props.dispatch({
+    //   type: 'global/self',
+    // });
   }
   render() {
-    const { aaa } = this.props;
-    console.log(aaa.payload);
+    // const { aaa } = this.props;
+    // console.log(aaa.payload);
     const layout = (
       <div>
         <div className={styles.div}>
           <img className={styles.img} alt="图片无法加载" src="http://isujin.com/wp-content/uploads/2017/11/wallhaven-37578.jpg" />
         </div>
-        <div>{aaa.payload}</div>
+        <div>{}</div>
       </div>
     );
     return (
@@ -26,6 +26,4 @@ class Contact extends PureComponent {
     );
   }
 }
-export default connect(state => ({
-  aaa: state.global.essay,
-}))(Contact);
+export default connect()(Contact);

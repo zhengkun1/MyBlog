@@ -3,7 +3,7 @@ import { Card, Row, Col } from 'antd';
 import styles from './self.less';
 // import default from '../layout/Basiclayout';
 const { Meta } = Card;
-export default class B extends PureComponent {
+class Self extends PureComponent {
   render() {
     const layout = (
       <div className={styles.div}>
@@ -51,3 +51,5 @@ export default class B extends PureComponent {
     );
   }
 }
+
+export default Self;
