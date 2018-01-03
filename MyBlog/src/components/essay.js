@@ -7,7 +7,7 @@ class Essay extends React.Component {
     const { title, content } = this.props;
     return (
       <div className={styles.global}>
-        <h4 className={styles.h3}>{title}</h4>
+        <h4>{title}</h4>
         <p className={styles.p}>{content}</p>
       </div>
     );
