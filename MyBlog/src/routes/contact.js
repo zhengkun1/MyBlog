@@ -20,6 +20,7 @@ class Contact extends PureComponent {
           <TextArea placeholder="Write you want to say to me!" rows={5} className={styles.textarea} />
         </div>
         <Button>发送</Button>
+        <div className={styles.word}>CONTACT</div>
       </div>
     );
     return (

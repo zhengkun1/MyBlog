@@ -8,11 +8,7 @@ class Self extends PureComponent {
     const layout = (
       <div className={styles.div}>
         <img alt="图片无法加载" src="http://isujin.com/wp-content/uploads/2014/10/162a05656bb12d2abf1bc65b6838977e.jpg" className={styles.img} />
-        <p className={styles.p}>
-          <p>COME</p>
-          <p>FROM</p>
-          <p>CHINA!</p>
-        </p>
+        <div className={styles.word}>SELF</div>
         <Row style={{ margin: '30px' }}>
           <Col span={8}>
             <Card

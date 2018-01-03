@@ -60,6 +60,7 @@ export default class Write extends PureComponent {
             }
           </div>
         </Row>
+        <div className={styles.word}>ESSAY</div>
         <Pagination
           className={styles.page}
           current={this.state.current}
