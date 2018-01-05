@@ -61,7 +61,9 @@ class Basiclayout extends React.PureComponent {
             className={styles.header}
           >
             <Row>
-              <Col span={4} className={styles.K}>10K</Col>
+              <Col span={4} className={styles.K}>
+                <Link to="/" style={{ color: 'white' }}>10K</Link>
+              </Col>
               <Col span={8} offset={12}>
                 <Menu
                   onClick={this.handleClick}
@@ -69,7 +71,6 @@ class Basiclayout extends React.PureComponent {
                   mode="horizontal"
                   className={styles.menu}
                 >
-                  <Menu.Item key="0"><Link to="/" style={{ fontSize: '30px' }}>HOME</Link></Menu.Item>
                   <Menu.Item key="1"><Link to="/first/self" style={{ fontSize: '30px' }}>SELF</Link></Menu.Item>
                   <Menu.Item key="2"><Link to="/first/essay" style={{ fontSize: '30px' }}>ESSAY</Link></Menu.Item>
                   <Menu.Item key="3"><Link to="/first/contact" style={{ fontSize: '30px' }}>CONTACT</Link></Menu.Item>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 import Basiclayout from './layout/Basiclayout';
 import Firstpage from './layout/firstpagelayout';
+// import Enterpage from './layout/Enterpage';
 import Self from './routes/self';
 import essay from './routes/essay';
 import contact from './routes/contact';
