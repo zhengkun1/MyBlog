@@ -51,11 +51,6 @@ export default class Write extends PureComponent {
     const layout = (
       <div>
         <img className={styles.img} alt="图片加载失败" src="http://isujin.com/wp-content/uploads/2014/12/wallhaven-74859.jpg" />
-        {/* <Row className={styles.essay}>
-          <Col span={12} offset={6}>
-            <div>文章</div>
-          </Col>
-        </Row> */}
         <Row>
           {
             this.state.essay.map(item => (

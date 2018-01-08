@@ -1,22 +1,18 @@
 import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 import { ContainerQuery } from 'react-container-query';
-// import default from 'antd/lib/card/Grid';
 import { Link, Route, Switch } from 'dva/router';
 import styles from '../layout/Basiclayout.less';
-import Self from '../routes/self';
 import essay from '../routes/essay';
 import contact from '../routes/contact';
-// import NotFound from '../routes/NotFound';
-
 
 const { Header, Footer, Content } = Layout;
+
 class Basiclayout extends React.PureComponent {
   state = {
     collapsed: false,
   };
   handleClick = (e) => {
-    console.log('click ', e);
     this.setState({
       current: e.key,
     });
@@ -54,7 +50,6 @@ class Basiclayout extends React.PureComponent {
             <Switch>
               <Route path="/first/contact" component={contact} />
               <Route path="/first/essay" component={essay} />
-              <Route path="/first/self" component={Self} />
             </Switch>
           </Content>
           <Header

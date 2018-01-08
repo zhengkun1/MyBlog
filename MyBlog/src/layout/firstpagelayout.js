@@ -8,7 +8,7 @@ class Firstpage extends React.Component {
     return (
       <div className={styles.background}>
         <div className={styles.word}>
-          <p>欢迎来到10K的博客！</p>
+          <p>欢迎来到 10K 的博客！</p>
         </div>
         <div className={styles.link}>
           <div className={styles.selfarea}>
