@@ -12,7 +12,7 @@ class Firstpage extends React.Component {
         </div>
         <div className={styles.link}>
           <div className={styles.selfarea}>
-            <Link className={styles.self} to="/first/essay">SELF</Link>
+            <Link className={styles.self} to="/first/essay">ESSAY</Link>
           </div>
           <div className={styles.selfarea}>
             <Link className={styles.contact} to="/first/contact">CONTACT</Link>

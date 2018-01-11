@@ -41,7 +41,6 @@ export default class Write extends PureComponent {
     ],
   }
   onChange = (page) => {
-    console.log(page);
     this.setState({
       current: page,
     });
