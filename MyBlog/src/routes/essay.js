@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Row, Col, Pagination, Card } from 'antd';
+import { Link } from 'dva/router';
 import styles from '../routes/essay.less';
-// import default from 'antd/lib/input';
-// import Essay from '../components/essay';
 
 export default class Write extends PureComponent {
   state = {
@@ -54,16 +53,18 @@ export default class Write extends PureComponent {
           {
             this.state.essay.map(item => (
               <Col span={8} className={styles.card}>
-                <Card
-                  hoverable
-                  style={{ width: '350px', height: '450px' }}
-                  cover={<img style={{ width: '350px', height: '250px' }} alt="图片无法加载" src={item.picture} />}
-                >
-                  <Meta
-                    title={item.title}
-                    description={item.content}
-                  />
-                </Card>
+                <Link to={item.path}>
+                  <Card
+                    hoverable
+                    style={{ width: '350px', height: '450px' }}
+                    cover={<img style={{ width: '350px', height: '250px' }} alt="图片无法加载" src={item.picture} />}
+                  >
+                    <Meta
+                      title={item.title}
+                      description={item.content}
+                    />
+                  </Card>
+                </Link>
               </Col>
             ))
           }
