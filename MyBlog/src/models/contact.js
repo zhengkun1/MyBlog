@@ -2,12 +2,15 @@ import { message } from 'antd';
 import { contactfunc } from '../services/contact';
 
 export default {
+
   namespace: 'contact',
+
   state: {
     name: '',
     email: '',
     message: '',
   },
+
   effects: {
     * submit({ paload }, { put, select }) {
       const contact = yield select(state => state.contact);
@@ -19,6 +22,7 @@ export default {
       }
     },
   },
+
   reducers: {
     wirteName(state, { paload }) {
       return {
