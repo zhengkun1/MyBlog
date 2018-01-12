@@ -1,3 +1,7 @@
+/**
+ * zhengkun 2017-12-12
+ */
+
 import React from 'react';
 import { Input, Button } from 'antd';
 import { connect } from 'dva';
@@ -21,4 +25,5 @@ const Contact = ({ dispatch }) => {
     </div>
   );
 };
+
 export default connect(({ contact }) => ({ contact }))(Contact);

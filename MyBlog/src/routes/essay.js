@@ -1,6 +1,9 @@
+/**
+ * zhengkun 2017-12-12
+ */
+
 import React, { PureComponent } from 'react';
 import { Row, Col, Pagination, Card } from 'antd';
-import { Link } from 'dva/router';
 import styles from '../routes/essay.less';
 
 export default class Write extends PureComponent {
@@ -53,18 +56,16 @@ export default class Write extends PureComponent {
           {
             this.state.essay.map(item => (
               <Col span={8} className={styles.card}>
-                <Link to={item.path}>
-                  <Card
-                    hoverable
-                    style={{ width: '350px', height: '450px' }}
-                    cover={<img style={{ width: '350px', height: '250px' }} alt="图片无法加载" src={item.picture} />}
-                  >
-                    <Meta
-                      title={item.title}
-                      description={item.content}
-                    />
-                  </Card>
-                </Link>
+                <Card
+                  hoverable
+                  style={{ width: '350px', height: '450px' }}
+                  cover={<img style={{ width: '350px', height: '250px' }} alt="图片无法加载" src={item.picture} />}
+                >
+                  <Meta
+                    title={item.title}
+                    description={item.content}
+                  />
+                </Card>
               </Col>
             ))
           }

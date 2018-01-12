@@ -1,3 +1,7 @@
+/**
+ * zhengkun 2017-12-12
+ */
+
 import React from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 import { ContainerQuery } from 'react-container-query';
@@ -89,4 +93,5 @@ class Basiclayout extends React.PureComponent {
     );
   }
 }
+
 export default Basiclayout;

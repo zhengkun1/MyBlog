@@ -13,4 +13,5 @@ class Essay extends React.Component {
     );
   }
 }
+
 export default Essay;

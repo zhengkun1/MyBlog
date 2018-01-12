@@ -1,7 +1,10 @@
+/**
+ * zhengkun 2017-12-12
+ */
+
 import React from 'react';
 import { Link } from 'dva/router';
 import styles from './firstpagelayout.less';
-
 
 class Firstpage extends React.Component {
   render() {
@@ -23,4 +26,5 @@ class Firstpage extends React.Component {
     );
   }
 }
+
 export default Firstpage;
