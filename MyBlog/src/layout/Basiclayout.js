@@ -60,7 +60,7 @@ class Basiclayout extends React.PureComponent {
             className={styles.header}
           >
             <Row>
-              <Col span={4} className={styles.K}>
+              <Col span={4} className={styles.home}>
                 <Link to="/" style={{ color: 'white' }}>10K</Link>
               </Col>
               <Col span={3} offset={17}>

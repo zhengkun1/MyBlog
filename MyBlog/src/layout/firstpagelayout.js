@@ -21,7 +21,7 @@ class Firstpage extends React.Component {
             <Link className={styles.contact} to="/first/contact">CONTACT</Link>
           </div>
         </div>
-        <p className={styles.p}>@2017 Made By 10K</p>
+        <p className={styles.footer}>@2017 Made By 10K</p>
       </div>
     );
   }
