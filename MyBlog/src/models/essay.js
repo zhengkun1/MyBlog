@@ -45,4 +45,13 @@ export default {
       });
     },
   },
+
+  reducers: {
+    loadessay(state, paload) {
+      return {
+        ...state,
+        essay: paload,
+      };
+    },
+  },
 };
